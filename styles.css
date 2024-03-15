@@ -1,5 +1,6 @@
 body {
   display: flex;
+  margin: 0;
   flex-direction: column;
 }
 main {
@@ -19,6 +20,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: 1px solid white;
 }
 .main-content {
   display: flex;
