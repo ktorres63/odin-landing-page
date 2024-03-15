@@ -7,6 +7,7 @@ body {
   margin: 0;
   flex-direction: column;
 }
+
 /*Header*/
 header {
   background-color: #1f2937;
@@ -14,10 +15,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 5px var(--default-padding-right) 0px var(--default-padding-left);
+  flex-grow: 1;
 }
 .logo-img {
   width: auto;
   height: 70px;
+  flex-shrink: 0;
 }
 
 a {
@@ -34,6 +37,7 @@ ul {
 }
 /* main */
 main {
+  flex-grow: 3;
   display: flex;
   flex-direction: column;
 }
@@ -44,7 +48,7 @@ main {
   display: flex;
   gap: 50px;
   justify-content: space-between;
-  padding: 30px var(--default-padding-right) 30px var(--default-padding-left);
+  padding: 80px var(--default-padding-right) 100px var(--default-padding-left);
 }
 h1 {
   margin: 0;
@@ -65,14 +69,17 @@ h1 {
   color: #f9faf8;
 }
 .game-img {
-  width: 30%;
-  height: auto;
+  width: 300px;
   border: 1px solid white;
   border-radius: 10px;
+  flex-shrink: 0;
 }
 
 /* extra-information */
-
+.extra-information{
+  padding-bottom: 130px;
+  padding-top: 10px;
+}
 h2 {
   text-align: center;
   font-size: 36px;
@@ -107,20 +114,67 @@ h2 {
 /* Quote */
 .quote {
   background-color: #e5e7eb;
+  padding: 100px 250px;
 }
 .quote-text {
+  margin: 0;
   font-size: 36px;
   font-style: italic;
   font-weight: lighter;
 }
+.quote-author{
+  text-align: end;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 5px;
 
-/* call-to-action */
-
-.call-to-action-container {
-  background-color: #3882f6;
 }
 
+/* call-to-action */
+.cta-white-section{
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.call-to-action-container {
+  display: flex;
+  gap: 120px;
+  background-color: #3882f6;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 250px;
+}
+.title-cta{
+  color: #e5e7eb;
+  font-weight: bold;
+  font-size: 20px;
+  margin:0;
+}
+.description-cta{
+  color: #e5e7eb;
+  margin:0;
+}
+.cta-button{
+  background-color: #3882f6;
+  padding: 5px 30px;
+  border-radius: 8px;
+  color: #f9faf8;
+  font-weight: bold;
+
+}
+.cta-button:hover {
+  background-color: rgb(24, 76, 248);
+}
 /*Footer*/
 footer {
+  padding: 10px 0;
+  flex-grow: 1;
   background-color: #1f2937;
+}
+.footer-content{
+  text-align: center;
+  color: #f9faf8;
 }
