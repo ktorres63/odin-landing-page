@@ -1,49 +1,25 @@
+:root {
+  --default-padding-left: 200px;
+  --default-padding-right: 200px;
+}
 body {
   display: flex;
   margin: 0;
   flex-direction: column;
 }
-main {
-  display: flex;
-  flex-direction: column;
-}
-footer,
-header,
-.main-content {
-  background-color: #1f2937;
-}
-.logo-img{
-    width: auto;
-    height: 70px;
-}
+/*Header*/
 header {
+  background-color: #1f2937;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  border: 1px solid white;
+  padding: 5px var(--default-padding-right) 0px var(--default-padding-left);
 }
-.main-content {
-  display: flex;
-  gap: 25px;
-  justify-content: center;
-  padding: 33px;
+.logo-img {
+  width: auto;
+  height: 70px;
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: bold;
-  color: #f9faf8;
-}
-h2 {
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  color: #1f2937;
-}
-.header-logo {
-  font-size: 24px;
-  color: #f9faf8;
-}
 a {
   text-decoration: none;
   font-size: 18px;
@@ -54,8 +30,41 @@ ul {
   display: flex;
   padding: 0;
   margin: 0;
-  gap: 10px;
+  gap: 40px;
 }
+/* main content*/
+main {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+.main-content {
+  background-color: #1f2937;
+}
+
+.main-content {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 30px var(--default-padding-right) 30px var(--default-padding-left);
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #1f2937;
+}
+.header-logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
 img {
   width: 30%;
   height: auto;
@@ -77,6 +86,10 @@ img {
   border: 1px solid blue;
   border-radius: 10px;
 }
+.game-img {
+  border: 1px solid white;
+  border-radius: 10px;
+}
 .call-to-action-container {
   background-color: #3882f6;
 }
@@ -87,4 +100,8 @@ img {
   font-size: 36px;
   font-style: italic;
   font-weight: lighter;
+}
+/*Footer*/
+footer {
+  background-color: #1f2937;
 }
