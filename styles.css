@@ -11,6 +11,10 @@ header,
 .main-content {
   background-color: #1f2937;
 }
+.logo-img{
+    width: auto;
+    height: 70px;
+}
 header {
   display: flex;
   justify-content: space-around;
@@ -62,12 +66,23 @@ img {
 .item {
   width: 150px;
 }
-.item-description{
-    text-align: center;
+.item-description {
+  text-align: center;
 }
 .item-img {
   width: 150px;
   height: 150px;
   border: 1px solid blue;
   border-radius: 10px;
+}
+.call-to-action-container {
+  background-color: #3882f6;
+}
+.quote {
+  background-color: #e5e7eb;
+}
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
 }
